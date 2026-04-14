@@ -6,47 +6,76 @@
     <title>NetSolve</title>
 </head>
 <body>
-    <div id="banner">
-    <h1>NetSolve | Central de Suporte e Gestão de TI</h1>
+    <header>
+        <h1>NetSolve | Central de Suporte e Gestão de TI</h1>
+    </header>    
+    <button id="btn-interativo">Clique aqui!</button>
+    <p id="mensagem"></p>
+    <nav>
+        <h3>Links Úteis de TI</h3>
+        <p>
+            <a href="https://www.iso.org/standard/27001" target="_blank">Norma ISO 27001</a>
+        </p>
+        <p>
+            <a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity</a>
+        </p>
+        <p>
+            <a href="https://www.axelos.com/certifications/itil-service-management" target="_blank">Guia ITIL (Suporte)</a>
+        </p>
+        <p>
+            <a href="https://cve.mitre.org/" target="_blank">Banco de Dados CVE</a>
+        </p>    
+    </nav>
+    <div id="wrapper">
+        <main>
+            <h2>Sobre a Plataforma</h2>
+            <p>O NetSolve é uma solução de Help Desk desenvolvida para centralizar a gestão de incidentes 
+            e requisições tecnológicas. O sistema permite que usuários reportem falhas em equipamentos, 
+            sistemas ou redes, garantindo que a equipe de TI tenha uma visão clara das demandas pendentes.</p>
+
+            <p>Focado na eficiência operacional, o projeto utiliza uma interface estruturada para otimizar 
+            o tempo de resposta aos chamados. A proposta é assegurar que a infraestrutura de TI permaneça 
+            estável através de um controle rigoroso de cada ticket aberto.</p>    
+
+            <h2>Diferenciais do Sistema</h2>    
+            <ul>
+                <li>Triagem Inteligente: Classificação automática de chamados por categoria (Hardware, Software ou Rede).</li>
+                <li>Controle de SLA: Monitoramento em tempo real do prazo de solução para evitar interrupções críticas.</li>
+                <li>Painel do Técnico: Interface simplificada para visualização de filas de trabalho e prioridades.</li>
+            </ul>
+
+            <h2>Fluxo de Atendimento</h2>
+            <ol>
+                <li>Abertura: O usuário preenche o formulário detalhando a falha encontrada.</li>
+                <li>Diagnóstico: O técnico analisa o chamado e define a prioridade de execução.</li>
+                <li>Encerramento: Após a correção, o chamado é finalizado com o registro da solução aplicada</li>
+            </ol>
+
+            <img class="imagem-zoom" src="https://picsum.photos/300/200" alt="Imagem de exemplo">
+        </main>
+        <div id="lateral">   
+            <h3>Dicas de Segurança</h3>
+            <p>
+                <strong>Cuidado:</strong> A equipe de TI nunca solicita sua senha por telefone ou e-mail.
+            </p>
+            <p>
+                <strong>Lembrete:</strong> Ao sair da sua mesa, sempre bloqueie o computador usando as teclas Windows + L.
+            </p>
+            <p>
+                <strong>Pendrives:</strong> É proibido o uso de dispositivos removíveis não autorizados na rede NetSolve.
+            </p>
+        </div>
     </div>    
-    
-    <div id="conteudo">
-    <h2>Sobre a Plataforma</h2>
-    <p>O NetSolve é uma solução de Help Desk desenvolvida para centralizar a gestão de incidentes 
-        e requisições tecnológicas. O sistema permite que usuários reportem falhas em equipamentos, 
-        sistemas ou redes, garantindo que a equipe de TI tenha uma visão clara das demandas pendentes.</p>
-
-    <p>Focado na eficiência operacional, o projeto utiliza uma interface estruturada para otimizar 
-        o tempo de resposta aos chamados. A proposta é assegurar que a infraestrutura de TI permaneça 
-        estável através de um controle rigoroso de cada ticket aberto.</p>    
-
-    <h2>Diferenciais do Sistema</h2>    
-    <ul>
-        <li>Triagem Inteligente: Classificação automática de chamados por categoria (Hardware, Software ou Rede).</li>
-        <li>Controle de SLA: Monitoramento em tempo real do prazo de solução para evitar interrupções críticas.</li>
-        <li>Painel do Técnico: Interface simplificada para visualização de filas de trabalho e prioridades.</li>
-    </ul>
-
-    <h2>Fluxo de Atendimento</h2>
-    <ol>
-        <li>Abertura: O usuário preenche o formulário detalhando a falha encontrada.</li>
-        <li>Diagnóstico: O técnico analisa o chamado e define a prioridade de execução.</li>
-        <li>Encerramento: Após a correção, o chamado é finalizado com o registro da solução aplicada</li>
-    </ol>
-
-    <img src="https://picsum.photos/300/200" alt="Imagem de exemplo">
-    </div>
-
-    <div id="rodape">
-    <h2>Saiba Mais</h2>
-    <a href="https://abessoftware.com.br/" target="_blank">
+    <footer>
+        <h2>Saiba Mais</h2>
+        <a href="https://abessoftware.com.br/" target="_blank">
         ABES - Setor de Software e TI no Brasil
-    </a>
-    <br>
-    <a href="https://multivix.edu.br/" target="_blank">
+        </a>
+        <br>
+        <a href="https://multivix.edu.br/" target="_blank">
         Site da Faculdade Multivix
-    </a>
-    </div>
-
+        </a>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>
