@@ -1,5 +1,5 @@
 h1{
-    color: white; 
+    color: rgb(255,255,255); 
     text-align: center; 
     font-size: 21px; 
     font-weight: bold; 
@@ -11,7 +11,7 @@ h1{
 h2{
     font-family: Arial; 
     font-size: 20px; 
-    color: black;
+    color: rgb(0,0,0);
 }
 
 p, ul, ol{
@@ -43,12 +43,16 @@ img{
 
 footer{
     clear: both;
-    background-color: #333333;
-    color: white;
+    background-color: #747272;
+    color: rgb(255,255,255);
     text-align: center;
     padding: 15px;
     font-size: 12px;
     font-weight: bold;
+}
+
+footer a:hover {
+    color: rgb(0, 0, 0);
 }
 
 header{ 
@@ -64,7 +68,7 @@ main{
     float: left;
     width: 70%;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255,255,255);
 }
 
 #wrapper{
@@ -89,7 +93,7 @@ nav {
 }
 
 nav a {
-    color: blue;
+    color: rgb(0,0,255);
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -99,14 +103,14 @@ nav a {
 
 
 nav a:hover {
-    color: grey;
-    border-bottom: 2px solid grey;
+    color: rgb(128,128,128);
+    border-bottom: 0.5px solid rgb(128,128,128);
 }
 
 #btn-interativo {
   background-color: #2563EB;
-  color: white;
-  padding: 10px 20px;
+  color: rgb(255,255,255);
+  padding: 3px 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -121,9 +125,25 @@ nav a:hover {
 
 #mensagem {
   margin-top: 12px;
-  color: #059669;
+  color: #00b7ffbb;
   font-weight: bold;
 }
+
+#btn-zerar {
+  background-color: #DC2626;
+  color: rgb(255,255,255);
+  padding: 3px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+#btn-zerar:hover {
+  background-color: #B91C1C;
+}
+
 
 
 
