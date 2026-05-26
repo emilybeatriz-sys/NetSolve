@@ -7,23 +7,36 @@
 </head>
 <body>
     <header>
-        <h1>NetSolve | Central de Suporte e Gestão de TI</h1>
+        <h1>NetSolve | Central de Suporte e Gestão de TI | Avalie o nosso atendimento</h1>
     </header>
     
     <nav>
         <form id="formCadastro">
-            <input id="inputNome" type="text"
-            placeholder="Digite o problema ou chamado de ti..."> 
-            <span id="erroNome" class="erro oculto">Campo obrigatório</span>
-            <button type="submit">Adicionar</button>
-        </form>
-
-        <div id="lista"></div>
-        <script src="script.js"></script>
+        <label>Nome do avaliador</label> 
+        <input type="text" id="inputNome"
+        placeholder="Digite seu nome">
+        <span id="erroNome" class="erro oculto">Nome obrigatorio</span>
+        <label>E-mail</label>
+        <input type="email" id="inputEmail"
+        placeholder="seu@email.com">
+        <span id="erroEmail" class="erro oculto">E-mail invalido</span>
+        <label>Nota (1 a 10)</label>
+        <input type="text" id="inputNota"
+        placeholder="Digite um numero de 1 a 10">
+        <span id="erroNota" class="erro oculto">Nota entre 1 e 10</span>
+        <label>Comentario</label>
+        <textarea id="inputComentario"
+        placeholder="Escreva sua opiniao..."></textarea>
+        <span id="contadorChars" class="contador">0 / 200</span>
+        <span id="erroComentario" class="erro oculto">Minimo 10
+        caracteres</span>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="script.js"></script>
 
    
         <h3>Links Úteis de TI</h3>
-        <p>
+        <p>    
             <a href="https://www.iso.org/standard/27001" target="_blank">Norma ISO 27001</a>
         </p>
         <p>
