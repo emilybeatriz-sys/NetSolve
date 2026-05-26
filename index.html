@@ -8,11 +8,20 @@
 <body>
     <header>
         <h1>NetSolve | Central de Suporte e Gestão de TI</h1>
-    </header>    
-    <button id="btn-interativo">Clique aqui!</button>
-    <p id="mensagem"></p>
-    <button id="btn-zerar">Zerar contador</button>
+    </header>
+    
     <nav>
+        <form id="formCadastro">
+            <input id="inputNome" type="text"
+            placeholder="Digite o problema ou chamado de ti..."> 
+            <span id="erroNome" class="erro oculto">Campo obrigatório</span>
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div id="lista"></div>
+        <script src="script.js"></script>
+
+   
         <h3>Links Úteis de TI</h3>
         <p>
             <a href="https://www.iso.org/standard/27001" target="_blank">Norma ISO 27001</a>

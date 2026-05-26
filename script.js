@@ -1,26 +1,45 @@
-let contador = 0;
-const btn = document.getElementById("btn-interativo");
-const msg = document.getElementById("mensagem");
-btn.onclick = function() {
-  const nome = prompt('Qual é o seu nome?');
-  contador = contador + 1;  
-  if (contador < 5) {
-    msg.innerHTML = "Olá, " + nome + "! Você clicou " + contador + " vez(es). Continue!";
-  }else if (contador < 10) {
-    msg.innerHTML = "Olá, " + nome + "! Você clicou " + contador + " vez(es). Quase lá!";
-  }else {
-    msg.innerHTML = "Limite de 10 cliques atingido, " + nome + "!";
+const form      = document.querySelector('#formCadastro');
+const inputNome = document.querySelector('#inputNome');
+const erroNome  = document.querySelector('#erroNome');
+const lista     = document.querySelector('#lista');
+
+inputNome.setAttribute('autocomplete', 'off');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  cadastrar();
+});
+
+function cadastrar() {
+  const nome = inputNome.value.trim();
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  const texto = document.createElement('span');
+  texto.textContent = nome;
+
+  const btn = document.createElement('button');
+  btn.textContent = 'Excluir';
+  btn.classList.add('btn-excluir');
+
+  card.appendChild(texto);
+  card.appendChild(btn);
+  lista.appendChild(card);
+
+  inputNome.value = '';
+  inputNome.focus();
+
+  btn.addEventListener('click', function() {
+    // parentElement navega do botão para o card pai
+    btn.parentElement.remove();
+  });
+
+ if (nome === '') {
+    erroNome.classList.remove('oculto'); 
+    return;
   }
-};
-function zerar() {
-  contador = 0;
-  msg.innerHTML = "Contador zerado! Clique novamente para recomeçar.";
+  erroNome.classList.add('oculto');
 }
-
-document.getElementById("btn-zerar")
-  .addEventListener("click", zerar);
-
-
 
 
 
